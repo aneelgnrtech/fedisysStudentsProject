@@ -1217,7 +1217,10 @@ div#all {
     height: 100px;
     display: flex;
 }
-
+.send:hover{
+    background-color:#57c2a8 !important;
+   
+}
 .allinputs {
     width: 65%;
     height: auto;
@@ -1420,6 +1423,7 @@ textarea::placeholder {
 }
 
 @media screen and (max-width:1216px) {
+    
     .asscolorposition {
         display: none;
     }
