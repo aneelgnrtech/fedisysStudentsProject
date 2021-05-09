@@ -1164,6 +1164,11 @@ div#all {
     }
     
 }
+@media screen and (max-width:440px) {
+    .dark1{
+        padding: inherit;
+    }
+}
 /*--bacground-slidor-end--*/
 
 /*--wrapper-contact-start--*/
