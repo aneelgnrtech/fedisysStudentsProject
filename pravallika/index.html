@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>mockup-project</title>
@@ -23,6 +24,21 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
+
+
+    <script>
+        window.console = window.console || function(t) {};
+
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+
+    </script>
 
 
 </head>
@@ -318,7 +334,7 @@
                                             <div class="media">
                                                 <div class="whitecard"></div>
                                                 <div class="division">
-                                                    <div class="line"></div><img class=" img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-1_ffutqr.jpg" alt="11" >
+                                                    <div class="line"></div><img class=" img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-1_ffutqr.jpg" alt="11">
                                                     <p style="color:#16312a;"><b>Sony ley<br>-Bangalore</b></p>
                                                 </div>
                                                 <div class="media-body ml-3">
@@ -336,7 +352,7 @@
                                             <div class="media">
                                                 <div class="whitecard"></div>
                                                 <div class="division">
-                                                    <div class="line"></div><img class="img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-3_hdxocq.jpg" alt="12" >
+                                                    <div class="line"></div><img class="img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-3_hdxocq.jpg" alt="12">
                                                     <p style="color:#16312a;"><b>Sony ley<br>-Bangalore</b></p>
                                                 </div>
                                                 <div class="media-body ml-3">
@@ -354,7 +370,7 @@
                                             <div class="media">
                                                 <div class="whitecard"></div>
                                                 <div class="division">
-                                                    <div class="line"></div><img class=" img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-2_gibm2s.jpg" alt="13" >
+                                                    <div class="line"></div><img class=" img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-2_gibm2s.jpg" alt="13">
                                                     <p style="color:#16312a;"><b>Sony ley<br>-Bangalore</b></p>
                                                 </div>
                                                 <div class="media-body ml-3">
@@ -422,64 +438,91 @@
                 </div>
             </div>
             <div class="allinputs">
-                <div class="greencardright">
-                    <div class="width">
-                        <div class="form">
-                            <h4>Your Name</h4>
-                            <input type="text" placeholder="Chris Do">
+                <form action="#" name="registration">
+
+                    <div class="greencardright">
+
+                        <!--<h4>Your Name</h4>
+                            <input type="text" placeholder="Chris Do">-->
+                        <div class="width">
+                            <div class="form">
+                                <label for="firstname ">
+                                    <h4>First Name</h4>
+                                </label>
+                                <input type="text" name="firstname" id="firstname" placeholder="John" required>
+
+                            </div>
+
+                            <div class="form none">
+                                <!-- <h4>Moblie Number</h4>
+                            <input type="text" placeholder="+91-985634253">-->
+                                <label for="lastname">
+                                    <h4>Last Name</h4>
+                                </label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Doe" required>
+
+                            </div>
 
                         </div>
+                        <div class="head">
+                            <h2>select a services you need form us</h2>
+                        </div>
+                        <div class="w3-bar w3-black">
+                            <button class="w3-bar-item w3-button" onclick="openCity('London')" style="background-color: #57c2a8;margin-bottom: 10px; ">Interior Design</button>
+                            <button class="w3-bar-item w3-button secondtab" onclick="openCity('Paris')" style="background-color:transparent; color: #57c2a8;margin-bottom: 10px;">Home Decors</button>
+                            <button class="w3-bar-item w3-button  tableft" onclick="openCity('Tokyo')" style="background-color:transparent; color: #57c2a8;margin-bottom: 10px; ">Furniture</button>
+                        </div>
 
-                        <div class="form none">
-                            <h4>Moblie Number</h4>
-                            <input type="text" placeholder="+91-985634253">
+                        <div id="London" class="w3-container city">
+                            <!--<h4>Your Message</h4>
+                    <input type="text" placeholder="with your Message">-->
+                            <label for="email">
+                                <h4>Email</h4>
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="john@doe.com" required>
+                        </div>
+
+                        <div id="Paris" class="w3-container city" style="display:none">
+                            <!--<h4>Home Decors</h4>
+                    <input type="text" placeholder="with your Home Decors">-->
+                            <label for="password">
+                                <h4>Password</h4>
+                            </label>
+                            <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                        </div>
+
+                        <div id="Tokyo" class="w3-container city  " style="display:none">
+                            <label for="numbers">
+                                <h4>Furniture</h4>
+                            </label>
+                            <input type="text" placeholder="with your Furniture" required>
 
                         </div>
+                        <!--<button class="send" type="submit">SEND MESSAGE</button>-->
+
+                        <button class="register" type="submit">SEND MESSAGE</button>
+
                     </div>
-                </div>
-                <div class="head">
-                    <h2>select a services you need form us</h2>
-                </div>
-                <div class="w3-bar w3-black">
-                    <button class="w3-bar-item w3-button" onclick="openCity('London')" style="margin-left:60px;background-color: #57c2a8; ">Interior Design</button>
-                    <button class="w3-bar-item w3-button secondtab" onclick="openCity('Paris')" style="background-color:transparent; color: #57c2a8;">Home Decors</button>
-                    <button class="w3-bar-item w3-button  tableft" onclick="openCity('Tokyo')" style="background-color:transparent; color: #57c2a8; ">Furniture</button>
-                </div>
-
-                <div id="London" class="w3-container city">
-                    <h4>Your Message</h4>
-                    <input type="text" placeholder="with your Message">
-                </div>
-
-                <div id="Paris" class="w3-container city" style="display:none">
-                    <h4>Home Decors</h4>
-                    <input type="text" placeholder="with your Home Decors">
-                </div>
-
-                <div id="Tokyo" class="w3-container city  " style="display:none">
-                    <h4>Furniture</h4>
-                    <input type="text" placeholder="with your Furniture">
-                </div>
-                <button class="send">SEND MESSAGE</button>
+                </form>
             </div>
-            <script>
-                function openCity(cityName) {
-                    var i;
-                    var x = document.getElementsByClassName("city");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                }
-            </script>
-
-
         </div>
-
     </div>
-     <!--wrapper-contact-end-->
-     
-     <!--footer-start-->
+
+
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+
+    </script>
+    <!--wrapper-contact-end-->
+
+    <!--footer-start-->
     <div class="darkgreen">
         <div class="footer">
             <h4>Fidisys</h4>
@@ -487,6 +530,69 @@
             <p>&copy;2021 fidisys Technologies private Limited</p>
         </div>
     </div>
-<!--footer-end-->
+    <!--footer-end-->
 
-</body></html>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js'></script>
+    <script id="rendered-js">
+        // Wait for the DOM to be ready
+        $(function() {
+            // Initialize form validation on the registration form.
+            // It has the name attribute "registration"
+            $("form[name='registration']").validate({
+                // Specify validation rules
+                rules: {
+                    // The key name on the left side is the name attribute
+                    // of an input field. Validation rules are defined
+                    // on the right side
+
+                    firstname: "required",
+                    lastname: "required",
+                    email: {
+                        required: true,
+                        // Specify that email should be validated
+                        // by the built-in "email" rule
+                        email: true
+                    },
+
+                    password: {
+                        required: true,
+                        minlength: 5
+                    }
+                },
+
+
+                // Specify validation error messages
+                messages: {
+
+                    firstname: "Please enter your firstname",
+                    lastname: "Please enter your lastname",
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 5 characters long"
+                    },
+
+                    email: "Please enter a valid email address"
+                },
+
+                // Make sure the form is submitted to the destination defined
+                // in the "action" attribute of the form when valid
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });
+
+        });
+        //# sourceURL=pen.js
+
+    </script>
+
+
+
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+
+</body>
+
+</html>

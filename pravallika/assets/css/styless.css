@@ -1180,7 +1180,6 @@ div#all {
     font-family: 'Elsie', cursive !important;
     font-weight: 600;
 }
-
 .allsectionscard {
     width: 90%;
     height: auto;
@@ -1188,20 +1187,16 @@ div#all {
     display: flex;
     margin-bottom: 120px;
 }
-
 .greencardleft {
     width: 35%;
-    height: auto;
+    height:auto;
     background-color: #1a3e34;
 }
-
 .greencardleft h5 {
-
-    font-size: 33px;
+font-size: 33px;
     color: white;
     padding-top: 40px;
     padding-left: 30px;
- 
 }
 
 .greencardleft p {
@@ -1211,103 +1206,6 @@ div#all {
     padding-bottom: 20px;
     padding-left: 30px;
 }
-
-.greencardright {
-    width: 100%;
-    height: 100px;
-    display: flex;
-}
-.send:hover{
-    background-color:#57c2a8 !important;
-   
-}
-.allinputs {
-    width: 65%;
-    height: auto;
-    padding-top: 40px;
-    background-color: #ffffff;
-}
-
-.width {
-    margin: auto;
-    height: 470px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    justify-content: space-around;
-}
-
-.form h4 {
-    font-size: 17px;
-    color: #1a3e34;
-}
-
-.form input {
-    border: none;
-    border-bottom: 2px solid #1a3e34;
-    outline: 0px;
-    width: 310px;
-    height: 50px;
-}
-
-.form input:focus {
-    border: 1px solid #57c2a8;
-}
-
-.city input:focus {
-    border: 1px solid #57c2a8;
-}
-
-input::placeholder,
-textarea::placeholder {
-    color: #000;
-    font-weight: bold;
-    font-weight: 400;
-    font-size: 19px;
-    font-family: sans-serif;
-}
-
-.head h2 {
-    padding-left: 60px;
-    font-size: 23px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-
-}
-
-.city {
-    padding-top: 50px;
-    padding-left: 60px;
-}
-
-.city h4 {
-    font-size: 17px;
-    color: #1a3e34;
-}
-
-.city input {
-    border: none;
-    border-bottom: 2px solid #1a3e34;
-    outline: 0px;
-    width: 650px;
-    height: 50px;
-}
-
-input::placeholder,
-textarea::placeholder {
-    color: #000;
-    font-weight: bold;
-    font-weight: 400;
-    font-size: 19px;
-    font-family: sans-serif;
-}
-
-.send {
-    float: right;
-    margin-right: 50px;
-    margin-top: 40px;
-}
-
 .iconfont {
     display: flex;
 }
@@ -1330,138 +1228,130 @@ textarea::placeholder {
     display: flex;
     justify-content: space-between;
 }
-
 .asscolorposition {
     width: 140px;
     height: 140px;
     background-color: #57c2a8;
     border-top-left-radius: 170px;
-    border: 1px solid black;
     margin-left: 20px;
+    margin-top:30px;
 }
- .secondtab:hover{
-     background-color:#57c2a8 !important;
-     color:white !important;
-     border:2px solid #1a3e34;
+.allinputs {
+    width: 65%;
+    height: auto;
+    padding-top: 40px;
+    background-color: #ffffff;
 }
-.tableft:hover{
-    background-color:#57c2a8 !important;
-     color:white !important;
-     border:2px solid #1a3e34;
+.greencardright {
+    width:90%;
+    margin: auto;
+    height:490px;
+}
+.width{
+    display: flex;
+    justify-content: space-between;
+}
+.form{
+    width:48%;
+    height:130px;
+}
+.city{
+    width:100%;
+    height:130px;
+}
+.form h4{
+    font-size:17px;
+    color: #1a3e34;
+}
+.city h4{
+    font-size:17px;
+    color: #1a3e34;
+}
+.form label{
+    display: block;
+}
+input{
+    width:100%;
+    height: auto;
+    padding: 10px;
+    border:none;
+    border-bottom:3px solid #1a3e34;
+}
+.head h2{
+    font-size:24px;
+    padding:20px 0px;
+}
+/*.form input:focus {
+    border: 1px dashed #57c2a8 !important;
+}*/
+input::placeholder,
+textarea::placeholder {
+    color: #000;
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+form .error {
+  color: #ff0000;
+}
+.city h4{
+    padding-top: 20px;
+}
+.register{
+    float: right;
+    margin:30px 0px;
+}
+.register:hover{
+    background-color: #57c2a8;
 }
 /*meadia query*/
-@media screen and (max-width:568px) {
-    .allsectionscard {
+@media screen and (max-width:1228px) {
+.asscolorposition {
+    margin-left: 20px;
+    margin-top:30px;
+}
+    .asesome i {
+    font-size: 25px;
+    color: #57c2a8;
+    padding: inherit;
+        margin-right:0px;
+        margin-left: 30px;
+        margin-bottom:20px;
+}
+}
+@media screen and (max-width:800px) {
+    .width{
+        width:100% !important;
+        height: auto;
+    display:block;
+   
+}
+    .form{
+ 
+    width:100% !important;
+    height:130px;
+}
+    .allsectionscard{
         display: grid;
     }
-
-    .greencardleft {
-        width: 100%;
+    .greencardleft{
+        width:100%;
         height: auto;
     }
-
-    .linewidth {}
-
-    .greencardright {
-        width: 100%;
-        height: auto;
-        display: grid;
-    }
-
-    .form input {
-        width: 300px;
-        height: auto;
-    }
-
-    .city input {
-        width: 100%;
-        height: auto;
-    }
-
-    .allsectionscard {
-        display: grid;
-    }
-
-    .allinputs {
-        width: 100%;
-        height: auto;
-    }
-
-    /*.head h2 {
-        padding-top:none;
-    }*/
-
-    .width {
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-
-    .tablink {
-        margin-top: 20px;
-    }
-
-    .tableft {
-        display: block;
-    }
-
-    .city input {
-        width: 90%;
-        height: auto;
-    }
-
-    .send {
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width:1239px) {
-    .city input {
-        width: 85%;
+    .allinputs{
+        width:100%;
         height: auto;
     }
 }
-
-@media screen and (max-width:1216px) {
-    
-    .asscolorposition {
-        display: none;
-    }
+@media screen and (max-width:759px) {
+.asscolorposition {
+    margin-left: 20px;
+    margin-top:40px;
 }
-
-@media screen and (max-width:894px) {
-    .tableft {
-        margin-left: 60px;
-        margin-top: 20px;
-    }
+   
 }
-
-@media screen and (max-width:686px) {
-    .secondtab {
-        margin-left: 60px;
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width:1144px) {
-    .font input {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:1150px) {
-
-    .width {
-        display: grid;
-        width: 100%;
-    }
-
-    .none {
-        display: none;
-    }
-}
-
-/*--wrapper-contact-start--*/
+/*--wrapper-contact-end--*/
 
 /*--footer-start--*/
 .darkgreen {
@@ -1494,12 +1384,5 @@ textarea::placeholder {
 .Fidisys {
     padding-top: 20px;
 }
-
-
-
-
-
 /*--footer-end--*/
-
-
 /*-----------------------------------------------------------------------------------------------------------------------<css style> <start>---------------------------------------------------------------------------------------------------------------------------------*/
