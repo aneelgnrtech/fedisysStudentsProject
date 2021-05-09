@@ -1276,6 +1276,16 @@ input{
 /*.form input:focus {
     border: 1px dashed #57c2a8 !important;
 }*/
+.secondtab:hover{
+    background-color:#57c2a8 !important;
+    color:white !important;
+    border:2px solid #1a3e34 !important;
+}
+.tableft:hover{
+    background-color:#57c2a8 !important;
+    color:white !important;
+    border:2px solid #1a3e34 !important;
+}
 input::placeholder,
 textarea::placeholder {
     color: #000;
