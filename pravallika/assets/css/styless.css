@@ -1251,11 +1251,11 @@ font-size: 33px;
     width:100%;
     height:130px;
 }
-.form h4{
+.form label{
     font-size:17px;
     color: #1a3e34;
 }
-.city h4{
+.city label{
     font-size:17px;
     color: #1a3e34;
 }
