@@ -272,7 +272,6 @@ i {
         height: auto;
     }
 }
-
 /*--wrapper banner end--*/
 
 
@@ -1032,7 +1031,19 @@ div#all {
     padding-bottom: 10px;
     font-weight: 400;
 }
-
+@media screen and (max-width:460px) {
+    .grid {
+    width:100%;
+    display:block;
+        margin: auto;
+}
+    .col1,
+.col2,
+.col3 {
+    width: 100%;
+    margin: auto;
+}
+}
 @media screen and (max-width:568px) {
     .mask {
         display: none;
@@ -1153,7 +1164,6 @@ div#all {
     }
     
 }
-
 /*--bacground-slidor-end--*/
 
 /*--wrapper-contact-start--*/
