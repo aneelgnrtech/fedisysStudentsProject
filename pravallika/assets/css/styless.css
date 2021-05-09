@@ -1042,6 +1042,15 @@ div#all {
         display: none;
     }
 }
+@media screen and (max-width:768px) {
+    .mask {
+        display: none;
+    }
+
+    .mask1 {
+        display: none;
+    }
+}
 
 /*--grid-images end--*/
 /*--wrapper main end--*/
