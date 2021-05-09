@@ -76,12 +76,12 @@ a.resToggle {
     height: 50px;
     color: white;
     background-color: #1a3e34;
-    border-radius: 9px;
+    border-radius:4px;
     font-family: 'Josefin Sans', sans-serif !important;
 }
 .the-nav button:hover{
-    background-color:transparent;
-    color:#1a3e34;
+    background-color:#204c40;
+    color:white;
     border:2px solid #1a3e34;
 }
 .logo img {
