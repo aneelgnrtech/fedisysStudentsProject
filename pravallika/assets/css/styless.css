@@ -1132,34 +1132,17 @@ div#all {
 
 /*meadia query*/
 @media screen and (max-width:767px) {
-    .whitecard {
-        background-color: #57c2a8;
-        width: 80px;
-        height: 240px;
 
-
+    .media{
+        display: block !important;
     }
-
-    .division img {
-        margin-top: 70px;
-        padding: inherit;
-        width: 45px;
-        height: 40px;
+    .excellent{
+        margin-top:40px;
+        width:100%;
+        height: auto;
+        font-size:25px !important;
     }
-
-    .division p {
-        color: white !important;
-    }
-
-    .division {
-        width: 190px !important;
-        margin-left: 18px;
-        height: 190px;
-    }
-
-    .line {
-        display: none;
-    }
+    
 }
 
 /*--bacground-slidor-end--*/
