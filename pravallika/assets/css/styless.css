@@ -1368,6 +1368,11 @@ form .error {
 }
    
 }
+@media screen and (max-width:500px) {
+    .secondtab{
+        display: block !important;
+    }
+}
 /*--wrapper-contact-end--*/
 
 /*--footer-start--*/
