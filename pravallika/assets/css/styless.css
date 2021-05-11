@@ -15,7 +15,6 @@ body {
     font-family: 'Josefin Sans', sans-serif !important;
     background-image: linear-gradient(to right, #eaeaea, #eaeaea, #f1f1f1);
 }
-
 /*--wrapper-menu start--*/
 *,
 *:after,
@@ -1367,6 +1366,11 @@ form .error {
     margin-top:40px;
 }
    
+}
+@media screen and (max-width:500px) {
+    .secondtab{
+        display: block !important;
+    }
 }
 /*--wrapper-contact-end--*/
 
