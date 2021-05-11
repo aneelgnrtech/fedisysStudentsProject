@@ -2,8 +2,11 @@
 <html>
 <head>
     <title>Fidisys</title>
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link rel="icon" type="image/png" href="assets/images/logo1.png">
 
     <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -18,7 +21,7 @@
             <div class="hleft">
                 <img src="assets/images/logo1.png" width="50px" height="50px"/>
                 <i class="fas fa-bars" id="hmenu"><ul id="hdmenu">
-                    <li><a href="index.htm">services</a></li>
+                    <li><a href="index.html">services</a></li>
                     <li><a href="index.html">product</a></li>
                     <li><a href="index.html">work</a></li>
                 </ul></i>
@@ -138,33 +141,33 @@
 
                 <div class="flex2">
                     <div class="col" id="col1">
-                        <img src="assets/images/img3.jfif" width="100%" height="auto">
+                        <img src="assets/images/img6.jpg" width="100%" height="auto" id="img4">
                     </div>
 
                     <div class="col">
-                        <img src="assets/images/img2.jpg" width="100%" height="auto">
+                        <img src="assets/images/img2.jpg" width="100%" height="auto" id="img5">
                         <div class="overlay"></div>
                     </div>
 
                     <div class="col">
-                        <img src="assets/images/img4.jpg" width="100%" height="auto">
+                        <img src="assets/images/img4.jpg" width="100%" height="auto" id="img6">
                         <div class="overlay"></div>
                     </div>
                 </div>
 
                 <div class="flex3">
                     <div class="col">
-                        <img  src="assets/images/img9.jpg" width="100%" height="auto">
+                        <img  src="assets/images/img9.jpg" width="100%" height="auto" id="img7">
                         <div class="overlay"></div>
                     </div>
 
                     <div class="col">
-                        <img  src="assets/images/celling.png" width="100%" height="auto">
+                        <img  src="assets/images/celling.png" width="100%" height="auto" id="img8">
                         <div class="overlay"></div>
                     </div>
 
                     <div class="col">
-                        <img  src="assets/images/img10.jpg" width="100%" height="auto">
+                        <img  src="assets/images/img10.jpg" width="100%" height="auto" id="img9">
                         <div class="overlay"></div>
                     </div>
                 </div>
@@ -209,7 +212,7 @@
                         <hr>
                         <h1>Good choice</h1>
                         <i class="fas fa-quote-left" id="l"></i>
-                        <h4 style="color:white;padding-left:60px"">By ~ Ananya </h4>
+                        <h4 style="color:white;padding-left:60px">By ~ Ananya </h4>
                         <p> 
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores inventore repellendus error odio laboriosam fuga!
                         </p>
@@ -337,8 +340,48 @@ function showSlides(n) {
 
 $(document).ready(function(){
     $('#hmenu').click(function(){
-        $('#hdmenu').show();
+        $('#hdmenu').toggle();
     });
 });
+
+
+$(document).ready(function(){
+    $('#img1').click(function(){
+        window.open('assets/images/img7.jpg', '_blank',  'false')
+    });
+
+    $('#img2').click(function(){
+        window.open('assets/images/img7.png', '_blank',  'false')
+    });
+
+    $('#img3').click(function(){
+        window.open('assets/images/img8.jpg', '_blank',  'false')
+    });
+
+    $('#img4').click(function(){
+        window.open('assets/images/img6.jpg', '_blank',  'false')
+    });
+
+    $('#img5').click(function(){
+        window.open('assets/images/img2.jpg', '_blank',  'false')
+    });
+
+    $('#img6').click(function(){
+        window.open('assets/images/img4.jpg', '_blank',  'false')
+    });
+
+    $('#img7').click(function(){
+        window.open('assets/images/img9.jpg', '_blank',  'false')
+    });
+
+    $('#img8').click(function(){
+        window.open('assets/images/celling.png', '_blank',  'false')
+    });
+
+    $('#img9').click(function(){
+        window.open('assets/images/img10.jpg', '_blank',  'false')
+    });
+});
+
 </script>
 </html>
